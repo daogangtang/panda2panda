@@ -5,3 +5,14 @@ authors = ["Mike Tang <daogangtang@gmail.com>"]
 edition = "2018"
 
 [dependencies]
+futures = "0.1"
+tokio = "0.1"
+libp2p = { git = "https://github.com/libp2p/rust-libp2p" }
+tokio-stdin-stdout = "*"
+env_logger = "*"
+
+[[bin]]
+name = "node"
+path = "src/node.rs"
+
+
